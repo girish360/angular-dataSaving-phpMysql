@@ -1,0 +1,38 @@
+<div class="panel panel-default" *ngIf=model>
+  <div class="panel-body">
+      <form class="form-horizontal" >
+        <div class="form-group">
+        <label for="stringName" class="col-sm-2 control-label">String Name : </label>
+        <div class="col-sm-9">
+          <p class="form-control">{{model.stringName}}</p>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="textId" class="col-sm-2 control-label">Text ID : </label>
+        <div class="col-sm-9">
+          <p class="form-control">{{model.textId}}</p>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="stringDesc" class="col-sm-2 control-label">Description : </label>
+        <div class="col-sm-9">
+          <p class="form-control">{{model.stringDesc}}</p>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="usage" class="col-sm-2 control-label">Where do you usage it? : </label>
+        <div class="col-sm-9">
+          <p class="form-control">{{model.usage}}</p>
+        </div>
+      </div>
+      
+
+      <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-8">
+          <a  class="btn btn-info" (click)="goBack()">Cancel</a>
+        </div>
+      
+      </div>
+    </form>
+  </div>
+</div>

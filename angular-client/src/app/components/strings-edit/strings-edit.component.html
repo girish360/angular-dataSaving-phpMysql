@@ -1,0 +1,41 @@
+<div class="panel panel-default">
+  <div class="panel-body">
+    <form class="form-horizontal" (submit)="updateString()">
+      <div class="form-group">
+        <label for="stringName" class="col-sm-2 control-label">String Name : </label>
+        <div class="col-sm-9">
+          <input type="text" class="form-control"  [(ngModel)]="model.stringName" name="stringName">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="textId" class="col-sm-2 control-label">Text ID : </label>
+        <div class="col-sm-9">
+          <input type="text" class="form-control" [(ngModel)]="model.textId" name="textId">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="stringDesc" class="col-sm-2 control-label">Description : </label>
+        <div class="col-sm-9">
+          <input type="text" class="form-control"  [(ngModel)]="model.stringDesc" name="stringDesc">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="usage" class="col-sm-2 control-label">Where do you usage it? : </label>
+        <div class="col-sm-9">
+          <input type="text" class="form-control"  [(ngModel)]="model.usage" name="usage">
+        </div>
+      </div>
+      
+
+      <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-8">
+          <button type="submit" class="btn btn-success">Save</button>
+          <a  class="btn btn-info" (click)="goBack()">Cancel</a>
+        </div>
+      
+      </div>
+    </form>
+
+  </div>
+</div>
+

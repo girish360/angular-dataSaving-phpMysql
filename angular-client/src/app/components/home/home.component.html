@@ -1,0 +1,26 @@
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <td>String Name</td>
+      <td>Text ID</td>
+      <td>Description</td>
+      <td>Usage</td>
+      <td width=275 align="center">Action</td>
+    </tr>
+  </thead>
+  <tbody>
+     <tr *ngFor="let string of strings">
+        <td>{{string.stringName}}</td>
+        <td>{{string.textId}}</td>
+        <td>{{string.stringDesc}}</td>
+        <td>{{string.usage}}</td>
+        <td width=275> 
+            <a class="btn btn-info" routerLink="/detail/{{string._id}}">Detail</a> 
+            <a class="btn btn-success" routerLink="/edit/{{string._id}}">Edit</a>
+            <a class="btn btn-danger" (click)="deleteString(string._id)">Delete</a>
+        </td>
+     </tr>
+    
+  </tbody>
+ 
+</table>
